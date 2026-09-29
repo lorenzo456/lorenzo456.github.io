@@ -1,5 +1,5 @@
 html,body{
-    background-color: white !important;
+    background-color: var(--lj-bg) !important;
     margin:0;
     padding:0;
     height:100%;
@@ -12,53 +12,14 @@ p{
     font-size: 20px;
 }
 
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-    }
-    
-    .navbar .navbar-collapse {
-        text-align: center;
-        
-    }
-}
-
-#myNavbar{
-    border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    background-color: rgb(0, 0, 0);
-}
-.navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
-    font-size: 20px;
-  }
-
   a:hover { 
     /*background-color: gray !important; */
 }
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:50px;   /* Height of the footer */
-    background:rgb(207, 207, 207)
-  }
 
 #body1{
-    padding-bottom:50px;   /* Height of the footer */
-
-}
-  #container {
-   min-height:100%;
-   position:relative;
-}
-
-.contactTable{
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
 .emailText{
@@ -77,4 +38,169 @@ p{
     border-top: 2px solid black;
     padding-top: 30px;
     padding-bottom: 10px;
+}
+
+.project-card{
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.pixel-art{
+    image-rendering: pixelated;
+}
+
+.collapse-toggle[aria-expanded="true"] .when-collapsed,
+.collapse-toggle[aria-expanded="false"] .when-expanded{
+    display: none;
+}
+
+.contact-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: .75rem;
+}
+
+/* ---------- Gameful theme ---------- */
+
+:root{
+    /* palette based on Sweetie 16, a pixel-art game palette */
+    --lj-ink: #1a1c2c;
+    --lj-blue: #3b5dc9;
+    --lj-blue-dark: #29366f;
+    --lj-orange: #ef7d57;
+    --lj-green: #38b764;
+    --lj-bg: #eef2f6;
+    --lj-footer-bg: #dde4ec;
+    --bs-link-color-rgb: 59, 93, 201;
+    --bs-link-hover-color-rgb: 41, 54, 111;
+    --bs-primary-rgb: 59, 93, 201;
+}
+
+h1, h2, h3, .display-5, .navbar-brand{
+    font-family: "Rubik", system-ui, sans-serif;
+}
+main h1, main h2, main h3{
+    color: var(--lj-ink);
+}
+
+/* navy navbar with an orange accent line */
+nav.navbar{
+    position: relative;
+}
+nav.navbar.bg-dark{
+    background-color: var(--lj-ink) !important;
+}
+nav.navbar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 3px;
+    background: var(--lj-orange);
+}
+footer.bg-body-tertiary{
+    background-color: var(--lj-footer-bg) !important;
+    border-top: 0 !important;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+/* section headings get a little pixel block */
+main h2.h3::before{
+    content: "";
+    display: inline-block;
+    width: .55em;
+    height: .55em;
+    margin-right: .5em;
+    border-radius: 2px;
+    background: var(--accent, var(--lj-blue));
+    box-shadow: .15em .15em 0 rgba(0, 0, 0, .15);
+    vertical-align: .1em;
+}
+main section:nth-of-type(3n+1) h2.h3{ --accent: var(--lj-blue); }
+main section:nth-of-type(3n+2) h2.h3{ --accent: var(--lj-orange); }
+main section:nth-of-type(3n+3) h2.h3{ --accent: var(--lj-green); }
+
+/* cards cycle through blue, orange and green */
+.row > .col:nth-child(3n+1){ --accent: var(--lj-blue); }
+.row > .col:nth-child(3n+2){ --accent: var(--lj-orange); }
+.row > .col:nth-child(3n+3){ --accent: var(--lj-green); }
+
+main .card.border-0{
+    border-top: 4px solid var(--accent, var(--lj-blue)) !important;
+    border-radius: .75rem;
+}
+main .card.border-0 .rounded-top{
+    border-radius: 0 !important;
+}
+.project-card:hover{
+    box-shadow: 0 .6rem 0 -.2rem var(--accent, var(--lj-blue)), 0 .5rem 1.25rem rgba(0, 0, 0, .12) !important;
+}
+
+main .card .contact-icon{
+    background: color-mix(in srgb, var(--accent, var(--lj-blue)) 16%, white) !important;
+    color: color-mix(in srgb, var(--accent, var(--lj-blue)) 80%, black) !important;
+}
+
+/* arcade-style buttons that press down */
+.btn-primary{
+    --bs-btn-bg: var(--lj-blue);
+    --bs-btn-border-color: var(--lj-blue);
+    --bs-btn-hover-bg: var(--lj-blue-dark);
+    --bs-btn-hover-border-color: var(--lj-blue-dark);
+    --bs-btn-active-bg: var(--lj-blue-dark);
+    --bs-btn-active-border-color: var(--lj-blue-dark);
+    box-shadow: 0 4px 0 var(--lj-blue-dark);
+    transition: transform .08s ease, box-shadow .08s ease;
+}
+.btn-primary:active{
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 var(--lj-blue-dark);
+}
+.btn-outline-secondary{
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .12);
+}
+.btn-outline-secondary:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* hero photo with a blue ring */
+.profile-photo{
+    padding: 5px;
+    background: var(--lj-blue);
+}
+
+/* tagline chips */
+.topic-chip{
+    display: inline-block;
+    padding: .2em .8em;
+    margin: .15em .1em;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 1rem;
+    background: color-mix(in srgb, var(--accent) 16%, white);
+    color: color-mix(in srgb, var(--accent) 75%, black);
+}
+
+/* project page section pills */
+.nav-pills .nav-link.bg-body-tertiary:hover{
+    background: var(--lj-blue) !important;
+    color: white !important;
+}
+
+/* research page: colourful year headings */
+main h3.h4{
+    color: var(--lj-blue-dark);
 }
