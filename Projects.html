@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Projects | Lorenzo James</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+
+  <!--  Scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="container">
+                <div id ="body1">
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Lorenzo James</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainNavbar" aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="Projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>              
+            <main class="container py-5">
+                <header class="px-4 mb-5">
+                    <h1 class="display-5 fw-bold">Projects</h1>
+                    <p class="lead text-body-secondary">From my current research and PhD tools to homebrew console games, client work and game jams.</p>
+                    <nav class="nav nav-pills gap-2" aria-label="Project sections">
+                        <a class="nav-link bg-body-tertiary text-body" href="#research">Research projects</a>
+                        <a class="nav-link bg-body-tertiary text-body" href="#phd">PhD work</a>
+                        <a class="nav-link bg-body-tertiary text-body" href="#games">Game projects</a>
+                        <a class="nav-link bg-body-tertiary text-body" href="#old">Old projects</a>
+                    </nav>
+                </header>
+
+                <section id="research" class="px-4 mb-5">
+                    <h2 class="h3 mb-3">Research Projects</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/LudoHealth/profile.jpg" class="object-fit-cover" style="object-position: top;" alt="LudoHealth" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">LudoHealth</h3>
+                                    <p class="small text-body-secondary mb-2">Research platform, in progress</p>
+                                    <p class="card-text small mb-0">A gamified health platform built around micro-health transactions: players earn points through wellness challenges and spend them in connected games. It builds on my ICIS 2025 paper, and a work-in-progress paper is accepted at ICEC 2026.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Vue 3</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">TypeScript</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Flask</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/LudoHealthFrontend/" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Try it</a>
+                                        <button type="button" class="btn btn-link p-0 border-0 align-baseline fw-semibold text-decoration-none" style="font-size: .875em;" data-bs-toggle="modal" data-bs-target="#ludoDemo"><i class="bi bi-play-circle"></i> Demo</button>
+                                        <a href="https://github.com/lorenzo456/LudoHealthFrontend" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/GodotJump/godotjump.jpg" class="object-fit-cover" style="object-position: center;" alt="GodotJump" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">GodotJump</h3>
+                                    <p class="small text-body-secondary mb-2">Game connected to LudoHealth</p>
+                                    <p class="card-text small mb-0">An endless browser runner built with Godot 4 and exported to WebAssembly. It connects to LudoHealth, so players spend points earned through real-world health activities on power-ups.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Godot 4</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">GDScript</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">WebAssembly</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/GodotJump/" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-controller"></i> Play</a>
+                                        <a href="https://github.com/lorenzo456/GodotJump" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="phd" class="px-4 mb-5">
+                    <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-3">
+                        <h2 class="h3 mb-0">PhD Work</h2>
+                        <a href="https://lorenzo456.github.io/HealthPlatform/" class="text-decoration-none">Explore the Health Platform &rarr;</a>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/HealthPlatform/APLES_frontend.png" class="object-fit-cover" style="object-position: top left;" alt="APLES" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">APLES</h3>
+                                    <p class="small text-body-secondary mb-2">Automated Planning for Level Structures</p>
+                                    <p class="card-text small mb-0">A tool for systematically generating balanced level structures for digital health interventions.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/HealthPlatform/aples.html" class="small fw-semibold text-decoration-none">Learn more <i class="bi bi-arrow-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/HealthPlatform/GOALS_frontend.png" class="object-fit-cover" style="object-position: top;" alt="GOALS" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">GOALS</h3>
+                                    <p class="small text-body-secondary mb-2">Goal generation system</p>
+                                    <p class="card-text small mb-0">A tool for creating and refining well-defined goals compatible with digital health intervention applications.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/HealthPlatform/goals.html" class="small fw-semibold text-decoration-none">Learn more <i class="bi bi-arrow-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/HealthPlatform/minigame.png" class="object-fit-cover" style="object-position: top left;" alt="HIMF" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">HIMF</h3>
+                                    <p class="small text-body-secondary mb-2">Health Intervention Minigame Framework</p>
+                                    <p class="card-text small mb-0">A framework for integrating health activities into entertainment-based mobile games.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/HealthPlatform/himf.html" class="small fw-semibold text-decoration-none">Learn more <i class="bi bi-arrow-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/HealthPlatform/platform.png" class="object-fit-contain p-3" style="object-position: center;" alt="Integrated Framework" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">Integrated Framework</h3>
+                                    <p class="small text-body-secondary mb-2">The full platform</p>
+                                    <p class="card-text small mb-0">Connecting goal generation, automated planning, minigames, and human digital twins.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://lorenzo456.github.io/HealthPlatform/platform.html" class="small fw-semibold text-decoration-none">Learn more <i class="bi bi-arrow-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="games" class="px-4 mb-5">
+                    <h2 class="h3 mb-3">Game Projects</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/BoulderRunner/cover.png" class="object-fit-cover pixel-art" style="object-position: center;" alt="PS2 Boulder Runner" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">PS2 Boulder Runner</h3>
+                                    <p class="small text-body-secondary mb-2">PlayStation 2 homebrew</p>
+                                    <p class="card-text small mb-0">A 2D platformer for the PlayStation 2: run and jump across three levels while a boulder chases you. Built with PS2SDK and gsKit and packaged as a bootable ISO for PCSX2 or real hardware.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">C++</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">PS2SDK</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">gsKit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/MegamanClone/background-pc.png" class="object-fit-cover pixel-art" style="object-position: center;" alt="MegaMan Clone" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">MegaMan Clone</h3>
+                                    <p class="small text-body-secondary mb-2">PC game, C++ and Raylib</p>
+                                    <p class="card-text small mb-0">A small Mega Man-inspired platformer with two enemy types and a boss battle, written in C++ with Raylib instead of a game engine.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">C++</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Raylib</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">CMake</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://github.com/lorenzo456/MegamanClone" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/MegamanClone/background-dreamcast.png" class="object-fit-cover pixel-art" style="object-position: center;" alt="MegaMan Clone: Dreamcast Port" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">MegaMan Clone: Dreamcast Port</h3>
+                                    <p class="small text-body-secondary mb-2">Sega Dreamcast homebrew</p>
+                                    <p class="card-text small mb-0">The same game ported to the Sega Dreamcast with DreamSDK, KallistiOS and Raylib4Dreamcast, packaged as a bootable disc image.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">C++</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Raylib4Dreamcast</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">KallistiOS</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://github.com/lorenzo456/MegamanClone/tree/Dreamcast" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/playmagic1.png" class="object-fit-contain p-3" style="object-position: center;" alt="Unannounced VR Project" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">Unannounced VR Project</h3>
+                                    <p class="small text-body-secondary mb-2">Programmer internship at Playmagic</p>
+                                    <p class="card-text small mb-0">A AAA Gear VR title I worked on for four months, covering gameplay and AI programming, testing and bug fixing.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Gear VR</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://playmagicstudios.com/" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Playmagic</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="old" class="px-4">
+                    <h2 class="h3 mb-1">Old Projects</h2>
+                    <p class="text-body-secondary mb-4">Student work, game jams and side projects from my Bachelor&rsquo;s and Master&rsquo;s.</p>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/Tesla/tesla-thumb.jpg" class="object-fit-cover" style="object-position: center;" alt="Tesla: The Missing Pages" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">Tesla: The Missing Pages</h3>
+                                    <p class="small text-body-secondary mb-2">Commissioned by Sherlocked</p>
+                                    <p class="card-text small mb-0">An unreleased AR mystery experience: players colour in printed markers to bring 3D puzzle objects to life. I combined ARKit with OpenCV marker tracking and handled gameplay programming, testing and bug fixing.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">ARKit</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">OpenCV</span>
+                                    <span class="ms-auto d-flex gap-3">
+                                        <a href="https://www.sherlocked.nl/" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Sherlocked</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/Robot/Robot0.png" class="object-fit-cover" style="object-position: center;" alt="E-Limb-inator" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">E-Limb-inator</h3>
+                                    <p class="small text-body-secondary mb-2">Physical co-op game</p>
+                                    <p class="card-text small mb-0">Two players each wear a handmade robot limb fitted with Arduino sensors and fight a boss together. I built the game and the Arduino to Unity connection.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Arduino</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                    <img src="Img/Memoir/Memoir0.PNG" class="object-fit-cover" style="object-position: center;" alt="Memoir" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title mb-1">Memoir</h3>
+                                    <p class="small text-body-secondary mb-2">Global Applied Game Jam 2018, South Korea</p>
+                                    <p class="card-text small mb-0">A puzzle game for people with dementia: match pieces by sight or by sound to play a song in the right order.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-outline-secondary collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#oldAll" aria-expanded="false" aria-controls="oldAll">
+                            <span class="when-collapsed">Show all earlier projects (22) <i class="bi bi-chevron-down"></i></span>
+                            <span class="when-expanded">Hide earlier projects <i class="bi bi-chevron-up"></i></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse" id="oldAll">
+                        <h3 class="h5 text-body-secondary mt-5 mb-3">Student games</h3>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Dog/Dog0.png" class="object-fit-contain p-3" style="object-position: center;" alt="Over de Grens" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Over de Grens</h3>
+                                        <p class="small text-body-secondary mb-2">Made for the Netherlands Open Air Museum</p>
+                                        <p class="card-text small mb-0">An applied game that teaches children about the Netherlands in World War I: you play a dog carrying notes across the Belgian border. I implemented the animations and designed and built several mechanics.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unreal Engine 4</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://www.youtube.com/watch?v=nMGbVIZ7VJQ" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Trailer</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Cleaner/Cleaner0.PNG" class="object-fit-cover" style="object-position: center;" alt="The Cleaner" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">The Cleaner</h3>
+                                        <p class="small text-body-secondary mb-2">Graduation project</p>
+                                        <p class="card-text small mb-0">A game built around its enemy AI: a weak creature that uses hit-and-run tactics and teamwork, driven by a finite state machine.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Game AI</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://youtu.be/pFuiwDpdJvY" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Gameplay</a>
+                                            <a href="https://bitbucket.org/Lorenzo456/third-person-shooter/src/master/" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Akkad/akkad2.png" class="object-fit-cover" style="object-position: center;" alt="Akkad" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Akkad</h3>
+                                        <p class="small text-body-secondary mb-2">3D platformer</p>
+                                        <p class="card-text small mb-0">An adventure through five realms of the afterworld. I did general gameplay programming, levels 1 to 3 and the dialogue system.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://bitbucket.org/HuvaaKoodia/akkad" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Jeff/Jeff0.png" class="object-fit-cover" style="object-position: center;" alt="Jeff" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Jeff</h3>
+                                        <p class="small text-body-secondary mb-2">My first game</p>
+                                        <p class="card-text small mb-0">A 2D adventure about farmer Jeff and an evil chicken wizard, made in three weeks. It even got a fan-made let’s play on YouTube.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="http://www.newgrounds.com/portal/view/652287" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-controller"></i> Play</a>
+                                            <a href="https://www.youtube.com/watch?v=m0I8fHckVNw" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Let’s play</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/TestZone/Test0.png" class="object-fit-contain p-3" style="object-position: center;" alt="TestZone" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">TestZone</h3>
+                                        <p class="small text-body-secondary mb-2">Online multiplayer</p>
+                                        <p class="card-text small mb-0">A 2 to 4 player basketball game with terraforming and pulse guns. I worked on character and camera movement, the concept and design, and playtesting.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://github.com/FrankToonen/Testzone" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Rupture/Rupture0.png" class="object-fit-cover" style="object-position: center;" alt="Rupture" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Rupture</h3>
+                                        <p class="small text-body-secondary mb-2">Group project</p>
+                                        <p class="card-text small mb-0">I co-designed and built the first prototypes and the AI, and helped with programming in my spare time.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 text-body-secondary mt-5 mb-3">Game jams &amp; hackathons</h3>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Gg19/gg0.png" class="object-fit-cover" style="object-position: center;" alt="Private Teddy" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Private Teddy</h3>
+                                        <p class="small text-body-secondary mb-2">Global Game Jam 2019</p>
+                                        <p class="card-text small mb-0">A baby sneaks out of its crib to fetch its teddy bear, with deliberately goofy controls.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://github.com/MobeenAftab/GlobalGameJam2019" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/ggj17/gg1.png" class="object-fit-cover" style="object-position: center;" alt="Cannon Fight" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Cannon Fight</h3>
+                                        <p class="small text-body-secondary mb-2">Global Game Jam 2017</p>
+                                        <p class="card-text small mb-0">Two islanders build cannons and towers from washed-up objects. The tallest structure wins.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/DandruffRush/Dan1.png" class="object-fit-cover" style="object-position: center;" alt="Dandruff Rush" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Dandruff Rush</h3>
+                                        <p class="small text-body-secondary mb-2">Ludum Dare 32</p>
+                                        <p class="card-text small mb-0">Dan gets back at his bullies by throwing dandruff while dodging their shampoo.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="http://ludumdare.com/compo/ludum-dare-32/?action=preview&amp;uid=45912" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-controller"></i> Play</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/MamaPhobia/mama0.png" class="object-fit-cover" style="object-position: center;" alt="Mamaphobia" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Mamaphobia</h3>
+                                        <p class="small text-body-secondary mb-2">Living Lab Applied Game Jam 2016</p>
+                                        <p class="card-text small mb-0">An applied game for children whose parents have agoraphobia, about a rabbit who is afraid to go outside.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Flamingle/Flamingo0.png" class="object-fit-cover" style="object-position: center;" alt="Flamingle" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Flamingle</h3>
+                                        <p class="small text-body-secondary mb-2">Global Game Jam 2016</p>
+                                        <p class="card-text small mb-0">A quick-time-event game about flamingo mating dances.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://github.com/betzah/Flamingo" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/ScottLogic/ScottLogic0.PNG" class="object-fit-cover" style="object-position: center;" alt="Scott Logic AI Challenge" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Scott Logic AI Challenge</h3>
+                                        <p class="small text-body-secondary mb-2">Hackathon, Heriot-Watt University</p>
+                                        <p class="card-text small mb-0">An AI bot that competed against other contestants’ bots in a turn-based game.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Java</span>
+                                        <span class="ms-auto d-flex gap-3">
+                                            <a href="https://github.com/hWorblehat/hackathon" class="small fw-semibold text-decoration-none" target="_blank" rel="noopener"><i class="bi bi-code-slash"></i> Code</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 text-body-secondary mt-5 mb-3">Side projects</h3>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Pddl/pddl0.PNG" class="object-fit-cover" style="object-position: center;" alt="PDDL for Unity" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">PDDL for Unity</h3>
+                                        <p class="small text-body-secondary mb-2">Automated planning experiment</p>
+                                        <p class="card-text small mb-0">Unity sends a PDDL domain and problem to an online planner, then parses and executes the returned plan in the game.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">PDDL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/OpenGL/OpenGL0.PNG" class="object-fit-cover" style="object-position: center;" alt="OpenGL Renderer" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">OpenGL Renderer</h3>
+                                        <p class="small text-body-secondary mb-2">University assignment, extended</p>
+                                        <p class="card-text small mb-0">Built to learn the forward rendering pipeline: a vertex-shader cape, lighting, custom models and a post-processing effect.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">C++</span>
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">OpenGL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/psx/psx0.PNG" class="object-fit-cover" style="object-position: center;" alt="PlayStation 1 Game" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">PlayStation 1 Game</h3>
+                                        <p class="small text-body-secondary mb-2">Homebrew</p>
+                                        <p class="card-text small mb-0">A Space Invaders-style game that runs on a real PlayStation 1 or an emulator.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">C</span>
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Psy-Q SDK</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/arcade/arcade0.png" class="object-fit-cover" style="object-position: center;" alt="Arcade Game in a Box" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Arcade Game in a Box</h3>
+                                        <p class="small text-body-secondary mb-2">Hardware</p>
+                                        <p class="card-text small mb-0">A standalone two-player physical arcade game with lights and buttons.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Arduino</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Pong/Pong0.png" class="object-fit-cover" style="object-position: center;" alt="Space Pong" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Space Pong</h3>
+                                        <p class="small text-body-secondary mb-2">Cross-platform multiplayer</p>
+                                        <p class="card-text small mb-0">Online multiplayer across PC and mobile: PC vs PC, mobile vs mobile and PC vs mobile.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Beat/Beat0.png" class="object-fit-cover" style="object-position: center;" alt="Beat Detection" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Beat Detection</h3>
+                                        <p class="small text-body-secondary mb-2">Audio experiment</p>
+                                        <p class="card-text small mb-0">Detects beats in the background music at runtime and turns them into gameplay.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/car/car0.gif" class="object-fit-cover" style="object-position: center;" alt="Racing Game" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Racing Game</h3>
+                                        <p class="small text-body-secondary mb-2">Physics experiment</p>
+                                        <p class="card-text small mb-0">Experiments with wheel physics for an arcade racing game.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Space/Space0.png" class="object-fit-cover" style="object-position: center;" alt="Space Invaders" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Space Invaders</h3>
+                                        <p class="small text-body-secondary mb-2">Code structure exercise</p>
+                                        <p class="card-text small mb-0">A small clone focused on inheritance and overriding rather than the game itself.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Programming</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Instagram/Insta0.PNG" class="object-fit-cover" style="object-position: center;" alt="Instagram Map" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Instagram Map</h3>
+                                        <p class="small text-body-secondary mb-2">Web app</p>
+                                        <p class="card-text small mb-0">Plotted my Instagram photos on a map using their location data.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">JavaScript</span>
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Google Maps API</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm project-card">
+                                    <div class="ratio ratio-16x9 bg-body-tertiary rounded-top overflow-hidden">
+                                        <img src="Img/Weather/Weather0.PNG" class="object-fit-cover" style="object-position: center;" alt="Desktop Weather App" loading="lazy">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="h5 card-title mb-1">Desktop Weather App</h3>
+                                        <p class="small text-body-secondary mb-2">Java app</p>
+                                        <p class="card-text small mb-0">Live weather per city from the OpenWeatherMap API, with search-as-you-type city suggestions.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill bg-body-secondary text-body-secondary fw-normal">Java</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="modal fade" id="ludoDemo" tabindex="-1" aria-labelledby="ludoDemoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title h5" id="ludoDemoLabel">LudoHealth demo</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <iframe data-src="https://www.youtube.com/embed/Fk9rZCSagbc?autoplay=1" title="LudoHealth WIP Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                (function () {
+                    var modal = document.getElementById("ludoDemo");
+                    var frame = modal.querySelector("iframe");
+                    modal.addEventListener("show.bs.modal", function () { frame.src = frame.dataset.src; });
+                    modal.addEventListener("hidden.bs.modal", function () { frame.src = ""; });
+                })();
+            </script>
+            <footer class="mt-auto py-3 border-top bg-body-tertiary">
+                <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                    <span class="text-body-secondary">&copy; <span id="year">2026</span> Lorenzo James</span>
+                    <ul class="nav list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://github.com/lorenzo456" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://www.linkedin.com/in/lorenzojames" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://scholar.google.com/citations?user=frEk8yQAAAAJ&amp;hl=en" aria-label="Google Scholar"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-0.125em" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    </div>
+    </div>
+
+</body>
+</html>

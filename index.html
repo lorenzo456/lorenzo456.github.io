@@ -6,107 +6,125 @@
   <meta charset="UTF-8" />
   <title>Lorenzo Portfolio</title>
   
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <!--  Styles  -->
-  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" type="text/css" href="Style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-  <!-- Scripts 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
--->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-
+  <!--  Scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
         <div id ="body1">
-            <img src="Img/tempHeader.PNG" alt="placeholder headering" class="img-responsive" width="100%"/>
-            <nav class="navbar navbar-inverse" id="myNavbar">
-                    <div class="container-fluid">
-                            <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span> 
-                                    </button>
-                            </div>
-                            <div class="collape navbar-collapse" id="MainNavbar">
-                                <ul class="nav navbar-nav navbar-center">
-                                        <li><a href="https://lorenzo456.github.io/Index.html">Home</a></li>
-                                        <li><a href="Skills.html">Skills</a></li>
-                                        <li><a href="Work.html">Work</a></li>
-                                        <li><a href="Contact.html">Contact</a></li>
-                                </ul>
-                            </div>
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Lorenzo James</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainNavbar" aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        </ul>
                     </div>
+                </div>
             </nav>              
-            <div class="container-fluid content">
-                    <div class="row ">
-                    <div class="col-sm-2 ">
-                    </div>
-                    <div class="col-sm-8 ">
-                            <h1 class="text-center">Hello! I'm Lorenzo James</h1>
-                            <p class="text-center smallText"><i> I'm always open to <a href="https://www.facebook.com/lorenzo.james.737?ref=bookmarks">talk</a></i></p>
-                            <br>
-                            
-                            <h3><b><i>This is me...</b></i></h3>
-                            
+            <main class="container py-5">
+                <section class="px-4 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-md-4 text-center">
+                            <img src="Img/profile.jpg" alt="Photo of Lorenzo James" class="rounded-circle shadow-sm profile-photo" width="210" height="210" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-8 text-center text-md-start">
+                            <h1 class="display-5 fw-bold">Lorenzo James</h1>
+                            <p class="lead"><span class="topic-chip" style="--accent: var(--lj-orange);">Games</span> <span class="topic-chip" style="--accent: var(--lj-blue);">AI</span> <span class="topic-chip" style="--accent: var(--lj-green);">Information Systems</span></p>
                             <p>
-                                I'm a software developer from the netherlands who enjoys programming creative software/hardware applications and devices.
-                                Game development is a passion of mine which I also enjoy, but besides that I enjoy all aspects of software development.
-                                <br>
-                                <br>                                
+                                I'm an Assistant Professor in Management of Information Systems at I&Eacute;SEG School of Management.
+                                I did my PhD at Eindhoven University of Technology, where I researched how AI can personalize gamified
+                                mobile health apps, from LLM-generated treatment goals to automatically planned game content.
+                                My background is in game development, and games are still at the heart of how I think about
+                                getting people engaged with technology.
                             </p>
-                            <h3><b><i>My background</b></i></h3>
-                            
-                            <p>
-                                My background in Programming started when I attended a Media technology course at my local University,
-                                University of applied sciences Rotterdam. In the year I was studying there I've learned the basics of
-                                programming and more specifically web development. I decided to pivot into the direction of game development
-                                as I really enjoyed it and ended up doing a Bachelor's in Creative Media and Games at the University of the Arts
-                                Utrecht.
-                                <br>
-                                <br>
-                                
-                            </p>
-                            <h3><b><i>Where am I now?</b></i></h3>                            
-                            <p>
-                                After graduating with my Bachelor's I decided to get back into general software development to expand skillset as a 
-                                software developer. This path led me to the current course I am studying, a Masters in Computer Science at Heriot-Watt 
-                                University. Software development is something I really enjoy and I am always actively looking for opportunities to
-                                further my career growth and am ready for new challenges and to be part of all sorts of new creative experiences.
-                                At the moment I am looking for graduate opportunities so take a look at my <a href="Img/CV/LorenzoJamesCV1.pdf">CV</a>           
-                            </p>
-
-            
+                            <a href="files/CV.pdf" class="btn btn-primary mt-2" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down me-1"></i> Download CV</a>
+                        </div>
                     </div>
-                    <div class="col-sm-2 ">
+                </section>
+                <section class="px-4 pb-5">
+                    <h2 class="h3 mb-3">Teaching &amp; interests</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="contact-icon bg-primary-subtle text-primary-emphasis fs-4 mb-3"><i class="bi bi-code-slash"></i></div>
+                                    <p class="small text-uppercase fw-semibold text-body-secondary mb-1" style="letter-spacing: .05em;">Teaching</p>
+                                    <h3 class="h5 fw-semibold">Programming</h3>
+                                    <p class="small text-body-secondary mb-0">Computing logic and algorithmic thinking with Python and Scratch, up to object-oriented programming, REST APIs and software design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="contact-icon bg-primary-subtle text-primary-emphasis fs-4 mb-3"><i class="bi bi-database"></i></div>
+                                    <p class="small text-uppercase fw-semibold text-body-secondary mb-1" style="letter-spacing: .05em;">Teaching</p>
+                                    <h3 class="h5 fw-semibold">Data management</h3>
+                                    <p class="small text-body-secondary mb-0">Data Management Foundations, Database Management Systems and Data Preparation: UML modeling, SQL, and relational and non-relational database design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="contact-icon bg-primary-subtle text-primary-emphasis fs-4 mb-3"><i class="bi bi-controller"></i></div>
+                                    <p class="small text-uppercase fw-semibold text-body-secondary mb-1" style="letter-spacing: .05em;">Research &amp; interests</p>
+                                    <h3 class="h5 fw-semibold">Games</h3>
+                                    <p class="small text-body-secondary mb-0">Gamified and entertainment-based health interventions, and how game design can keep people engaged.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="contact-icon bg-primary-subtle text-primary-emphasis fs-4 mb-3"><i class="bi bi-cpu"></i></div>
+                                    <p class="small text-uppercase fw-semibold text-body-secondary mb-1" style="letter-spacing: .05em;">Research &amp; interests</p>
+                                    <h3 class="h5 fw-semibold">Artificial intelligence</h3>
+                                    <p class="small text-body-secondary mb-0">Automated planning, LLM-generated content and digital twins for personalized digital health. MSc in AI with distinction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="contact-icon bg-primary-subtle text-primary-emphasis fs-4 mb-3"><i class="bi bi-joystick"></i></div>
+                                    <p class="small text-uppercase fw-semibold text-body-secondary mb-1" style="letter-spacing: .05em;">Hobby</p>
+                                    <h3 class="h5 fw-semibold">Retro games</h3>
+                                    <p class="small text-body-secondary mb-0">Homebrew games for legacy hardware like the Sega Dreamcast and PlayStation 2, working within the limits of older architectures.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>       
-
-            </div>
-            <div id="footer">
-
-                    <table cellspacing="10" class="contactTable">
-                            <tr>
-                                <td><a href="https://bitbucket.org/Lorenzo456/"><img class="contactIcon" width="30" height="30" src="Img/bitbucket-icon.jpg"></a></td>
-                                <td><a href="https://www.facebook.com/lorenzo.james.737"><img class="contactIcon" width="30" height="30" src="Img/icon-facebook.png"></a></td>
-                                <td><a href="https://twitter.com/lorenzo456"><img class="contactIcon "width="30" height="30" src="Img/twitter-logo.png"></a></td>
-                                <td><a href="https://www.linkedin.com/in/lorenzojames"><img class="contactIcon" width="30" height="30" src="Img/linkedin-icon.gif"></a></td>
-                                <td><a href="https://github.com/lorenzo456"><img class="contactIcon" width="30" height="30" src="Img/github-icon.png"></a></td>
-                            </tr>
-                        </table>
-                        <div class="text-center">© 2018 Lorenzo James</div>
-
-            </div>
+                </section>
+            </main>
+            <footer class="mt-auto py-3 border-top bg-body-tertiary">
+                <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                    <span class="text-body-secondary">&copy; <span id="year">2026</span> Lorenzo James</span>
+                    <ul class="nav list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://github.com/lorenzo456" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://www.linkedin.com/in/lorenzojames" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary fs-4" href="https://scholar.google.com/citations?user=frEk8yQAAAAJ&amp;hl=en" aria-label="Google Scholar"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-0.125em" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
             
                 
         </div>
