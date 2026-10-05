@@ -204,3 +204,73 @@ main .card .contact-icon{
 main h3.h4{
     color: var(--lj-blue-dark);
 }
+
+/* about me */
+.about-text p{
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.timeline{
+    position: relative;
+    padding-left: 1.5rem;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: .35rem;
+    top: .4rem;
+    bottom: .4rem;
+    width: 2px;
+    background: var(--lj-footer-bg);
+}
+.timeline li{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.timeline li:last-child{
+    padding-bottom: 0;
+}
+.timeline li::before{
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    top: .3rem;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 2px;
+    background: var(--lj-blue);
+    box-shadow: .12em .12em 0 rgba(0, 0, 0, .15);
+}
+.timeline li:last-child::before{
+    background: var(--lj-orange);
+}
+.timeline li p,
+.timeline li div{
+    font-size: inherit;
+}
+
+/* horizontal timeline on larger screens */
+@media (min-width: 992px){
+    .timeline-h{
+        display: flex;
+        gap: 1.5rem;
+        padding-left: 0;
+        padding-top: 1.75rem;
+    }
+    .timeline-h::before{
+        left: 0;
+        right: 0;
+        top: .35rem;
+        bottom: auto;
+        width: auto;
+        height: 2px;
+    }
+    .timeline-h li{
+        flex: 1 1 0;
+        padding-bottom: 0;
+    }
+    .timeline-h li::before{
+        left: 0;
+        top: -1.75rem;
+    }
+}
