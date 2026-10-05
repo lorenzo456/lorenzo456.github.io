@@ -178,8 +178,16 @@ main .card .contact-icon{
 
 /* hero photo with a blue ring */
 .profile-photo{
+    width: 200px;
+    height: 200px;
     padding: 5px;
     background: var(--lj-blue);
+}
+@media (min-width: 768px){
+    .profile-photo{
+        width: 260px;
+        height: 260px;
+    }
 }
 
 /* tagline chips */
@@ -206,10 +214,6 @@ main h3.h4{
 }
 
 /* about me */
-.about-text p{
-    font-size: 1.05rem;
-    line-height: 1.7;
-}
 .timeline{
     position: relative;
     padding-left: 1.5rem;
@@ -273,4 +277,22 @@ main h3.h4{
         left: 0;
         top: -1.75rem;
     }
+}
+
+/* home page typography */
+main p{
+    font-size: 1.0625rem;
+}
+.hero-intro{
+    font-size: 1.2rem !important;
+    max-width: 40rem;
+}
+.about-text p{
+    font-size: 1.0625rem;
+    line-height: 1.75;
+}
+.glance-icon{
+    font-size: 1.25rem;
+    color: var(--lj-blue);
+    line-height: 1.6;
 }
