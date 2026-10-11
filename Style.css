@@ -303,3 +303,18 @@ main p{
     height:auto;
 }
 
+.blog-post-body figure{
+    margin:2rem 0;
+    text-align:center;
+}
+.blog-post-body figure img{
+    max-height:22rem;
+    width:auto;
+    border-radius:.5rem;
+    box-shadow:0 .125rem .5rem rgba(0,0,0,.12);
+}
+.blog-post-body figcaption{
+    margin-top:.5rem;
+    font-size:.875rem;
+    color:var(--bs-secondary-color);
+}

@@ -9,3 +9,13 @@ defaults:
       nav: Blog
       # Blog posts live in _posts/ and are published at /blog/YYYY/MM/DD/post-title/
       permalink: /blog/:year/:month/:day/:title/
+
+# Files that should not be published on the site.
+# Setting this replaces Jekyll's default list, so the defaults are repeated here.
+exclude:
+  - ICEC2026/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - node_modules/

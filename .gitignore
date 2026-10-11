@@ -3,3 +3,6 @@ _site/
 .jekyll-metadata
 .bundle/
 vendor/
+
+# Original slides and full-size photos (published versions live in files/ and Img/blog/)
+ICEC2026/
