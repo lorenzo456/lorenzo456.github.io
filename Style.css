@@ -296,3 +296,10 @@ main p{
     color: var(--lj-blue);
     line-height: 1.6;
 }
+
+/* Blog posts */
+.blog-post-body img{
+    max-width:100%;
+    height:auto;
+}
+

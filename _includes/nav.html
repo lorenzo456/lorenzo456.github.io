@@ -1,0 +1,16 @@
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ '/index.html' | relative_url }}">Lorenzo James</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainNavbar" aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            {% assign links = "Home:index.html,Projects:Projects.html,Research:Research.html,Blog:Blog.html,Contact:Contact.html" | split: "," %}
+                            {% for link in links %}{% assign parts = link | split: ":" %}
+                            <li class="nav-item"><a class="nav-link{% if page.nav == parts[0] %} active" aria-current="page{% endif %}" href="{{ parts[1] | prepend: '/' | relative_url }}">{{ parts[0] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </nav>

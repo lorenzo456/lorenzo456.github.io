@@ -1,0 +1,13 @@
+---
+layout: default
+---
+                <a href="{{ '/Blog.html' | relative_url }}" class="d-inline-block px-4 small text-decoration-none" style="margin-top: -1.5rem;"><i class="bi bi-arrow-left"></i> All posts</a>
+                <article class="px-4 mx-auto" style="max-width: 44rem; margin-top: -0.75rem;">
+                    <header class="mb-4">
+                        <h1 class="display-6 fw-bold">{{ page.title }}</h1>
+                        <p class="text-body-secondary mb-0">{{ page.date | date: "%-d %B %Y" }}</p>
+                    </header>
+                    <div class="blog-post-body">
+{{ content }}
+                    </div>
+                </article>

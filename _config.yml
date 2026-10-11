@@ -1,0 +1,11 @@
+title: Lorenzo James
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav: Blog
+      # Blog posts live in _posts/ and are published at /blog/YYYY/MM/DD/post-title/
+      permalink: /blog/:year/:month/:day/:title/

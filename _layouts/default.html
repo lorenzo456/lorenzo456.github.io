@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+    <div id="container">
+        <div id ="body1">
+{% include nav.html %}
+            <main class="container py-5">
+{{ content }}
+            </main>
+{% include footer.html %}
+        </div>
+    </div>
+</body>
+</html>
